@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marvel heroes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onLoad="init()">
+    <header id="idm-header">
+        <div id="idm-logo">
+            <img src="images/marvel-logo2.png" alt="">
+        </div>
+        <div id="idm-main-menu">
+            <nav>
+                <ul>
+                    <button id="idm-refresh-button" onClick="refresh()">Refresh</button>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div id="idm-heroe-section">
+        <div id="idm-search-section">
+            <img src="images/header2.png" alt="" id="idm-header-heroes">
+            <img src="images/offline.png" alt="" id="idm-header-heroes-offline">
+            <h2 id="idm-msj-offline">No cuentas con conexión a internet. Intenta de nuevo.</h2>
+            <input type="text" id="idm-input-search" placeholder="Search Marvel Heroes">
+            <button id="idm-search-button" onClick="makeRequest()">Search</button>
+        </div>
+        <div id="idm-container-heroe">
+            <div id="idm-info-heroe">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer id="idm-footer">
+    <div id="idm-footer-cont">
+        <div id="idm-social">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/ivand113"><img src="images/facebook.png" alt="" class="idm-social-img"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/ivanm113/"><img src="images/instagram.png" alt="" class="idm-social-img"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/ivanmosquerat"><img src="images/github.png" alt="" class="idm-social-img"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="idm-info-footer">
+            Realizado por Ivan Mosquera <br> © 2017 Copyright All rights reserved.
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+
+</html>
